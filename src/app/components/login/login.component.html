@@ -1,0 +1,30 @@
+<div class="form-container mat-elevation-z5">
+  <h1>Login</h1>
+
+  <!-- Login Form -->
+  <form [formGroup]="loginForm">
+    <mat-form-field>
+      <input matInput placeholder="Email Address" formControlName="email" />
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Password"
+        formControlName="password"
+        type="password"
+      />
+      
+    </mat-form-field>
+
+    <div class="center margin-top">
+      <button mat-raised-button type="submit" (click)="login()">Login</button>
+    </div>
+
+    <span class="center margin-top">
+      New To our platform?
+      <a href="sign-up" class="sign-up-link">Sign up! </a>
+    </span>
+  </form>
+</div>
